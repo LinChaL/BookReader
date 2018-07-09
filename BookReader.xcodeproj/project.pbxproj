@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32986BD2A9E89196393B584A /* Pods_BookReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC314F97DE227B7CC913817 /* Pods_BookReader.framework */; };
+		590A246220DD136200968414 /* RDReadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590A246120DD136200968414 /* RDReadView.swift */; };
+		590A246420DD14B500968414 /* RDReadParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590A246320DD14B500968414 /* RDReadParser.swift */; };
+		590A246620DD1FDF00968414 /* RDGlobalProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590A246520DD1FDF00968414 /* RDGlobalProperty.swift */; };
+		590A246820DD25BC00968414 /* RDReadConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590A246720DD25BC00968414 /* RDReadConfigure.swift */; };
+		594A616120DB80290094D3A2 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594A616020DB80290094D3A2 /* String+.swift */; };
+		594A616420DB82490094D3A2 /* mdjyml.txt in Resources */ = {isa = PBXBuildFile; fileRef = 594A616320DB82490094D3A2 /* mdjyml.txt */; };
+		594A616720DB876B0094D3A2 /* RDUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594A616620DB876B0094D3A2 /* RDUtils.swift */; };
+		594A616920DB97EC0094D3A2 /* 执宰大明.txt in Resources */ = {isa = PBXBuildFile; fileRef = 594A616820DB97EC0094D3A2 /* 执宰大明.txt */; };
+		594A616C20DBB0780094D3A2 /* RDReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594A616B20DBB0780094D3A2 /* RDReadViewController.swift */; };
+		597392D720E7457E00EE6C81 /* RDRecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597392D620E7457E00EE6C81 /* RDRecordModel.swift */; };
 		5976398D20D9F2430085763A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5976398C20D9F2430085763A /* AppDelegate.swift */; };
 		5976398F20D9F2430085763A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5976398E20D9F2430085763A /* ViewController.swift */; };
 		5976399220D9F2430085763A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5976399020D9F2430085763A /* Main.storyboard */; };
@@ -14,6 +25,13 @@
 		5976399720D9F2440085763A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5976399520D9F2440085763A /* LaunchScreen.storyboard */; };
 		597639A220D9F2440085763A /* BookReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597639A120D9F2440085763A /* BookReaderTests.swift */; };
 		597639AD20D9F2440085763A /* BookReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597639AC20D9F2440085763A /* BookReaderUITests.swift */; };
+		597639BB20D9FE1D0085763A /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 597639BA20D9FE1D0085763A /* Podfile */; };
+		597639BD20DA2F680085763A /* RDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597639BC20DA2F680085763A /* RDViewController.swift */; };
+		597639C020DA30290085763A /* RDPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597639BF20DA30290085763A /* RDPageViewController.swift */; };
+		597639C320DA77170085763A /* RDReadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597639C220DA77170085763A /* RDReadModel.swift */; };
+		597639C520DA78750085763A /* RDChapterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597639C420DA78750085763A /* RDChapterModel.swift */; };
+		597B173920EFA46100166BAB /* RDBackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597B173820EFA46100166BAB /* RDBackgroundViewController.swift */; };
+		59F7BAA620E64D6B0004E254 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F7BAA520E64D6B0004E254 /* HexColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +52,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D5CF16E7BBD3C95FC1EB75B /* Pods-BookReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookReader/Pods-BookReader.release.xcconfig"; sourceTree = "<group>"; };
+		590A246120DD136200968414 /* RDReadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDReadView.swift; sourceTree = "<group>"; };
+		590A246320DD14B500968414 /* RDReadParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDReadParser.swift; sourceTree = "<group>"; };
+		590A246520DD1FDF00968414 /* RDGlobalProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDGlobalProperty.swift; sourceTree = "<group>"; };
+		590A246720DD25BC00968414 /* RDReadConfigure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDReadConfigure.swift; sourceTree = "<group>"; };
+		594A616020DB80290094D3A2 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		594A616320DB82490094D3A2 /* mdjyml.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mdjyml.txt; sourceTree = "<group>"; };
+		594A616620DB876B0094D3A2 /* RDUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDUtils.swift; sourceTree = "<group>"; };
+		594A616820DB97EC0094D3A2 /* 执宰大明.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "执宰大明.txt"; sourceTree = "<group>"; };
+		594A616B20DBB0780094D3A2 /* RDReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDReadViewController.swift; sourceTree = "<group>"; };
+		597392D620E7457E00EE6C81 /* RDRecordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDRecordModel.swift; sourceTree = "<group>"; };
 		5976398920D9F2430085763A /* BookReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5976398C20D9F2430085763A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5976398E20D9F2430085763A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +76,15 @@
 		597639A820D9F2440085763A /* BookReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		597639AC20D9F2440085763A /* BookReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReaderUITests.swift; sourceTree = "<group>"; };
 		597639AE20D9F2440085763A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		597639BA20D9FE1D0085763A /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		597639BC20DA2F680085763A /* RDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDViewController.swift; sourceTree = "<group>"; };
+		597639BF20DA30290085763A /* RDPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDPageViewController.swift; sourceTree = "<group>"; };
+		597639C220DA77170085763A /* RDReadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDReadModel.swift; sourceTree = "<group>"; };
+		597639C420DA78750085763A /* RDChapterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDChapterModel.swift; sourceTree = "<group>"; };
+		597B173820EFA46100166BAB /* RDBackgroundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDBackgroundViewController.swift; sourceTree = "<group>"; };
+		59F7BAA520E64D6B0004E254 /* HexColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
+		619648312EA2E928A41EC2FD /* Pods-BookReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookReader/Pods-BookReader.debug.xcconfig"; sourceTree = "<group>"; };
+		9BC314F97DE227B7CC913817 /* Pods_BookReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32986BD2A9E89196393B584A /* Pods_BookReader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +113,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		590A246020DD134B00968414 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				590A246120DD136200968414 /* RDReadView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		594A615F20DB80130094D3A2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				59F7BAA520E64D6B0004E254 /* HexColor.swift */,
+				594A616020DB80290094D3A2 /* String+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		594A616220DB82340094D3A2 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				594A616820DB97EC0094D3A2 /* 执宰大明.txt */,
+				594A616320DB82490094D3A2 /* mdjyml.txt */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		594A616520DB875B0094D3A2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				594A616620DB876B0094D3A2 /* RDUtils.swift */,
+				590A246320DD14B500968414 /* RDReadParser.swift */,
+				590A246520DD1FDF00968414 /* RDGlobalProperty.swift */,
+				590A246720DD25BC00968414 /* RDReadConfigure.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		594A616A20DBB0020094D3A2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				594A616B20DBB0780094D3A2 /* RDReadViewController.swift */,
+				597B173820EFA46100166BAB /* RDBackgroundViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		5976398020D9F2430085763A = {
 			isa = PBXGroup;
 			children = (
+				594A616220DB82340094D3A2 /* Resource */,
+				597639BA20D9FE1D0085763A /* Podfile */,
 				5976398B20D9F2430085763A /* BookReader */,
 				597639A020D9F2440085763A /* BookReaderTests */,
 				597639AB20D9F2440085763A /* BookReaderUITests */,
 				5976398A20D9F2430085763A /* Products */,
+				9E1BF777D830729A36B51EF4 /* Pods */,
+				8279A3C52F4F7A61C436E337 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +186,19 @@
 		5976398B20D9F2430085763A /* BookReader */ = {
 			isa = PBXGroup;
 			children = (
+				590A246020DD134B00968414 /* View */,
+				594A616A20DBB0020094D3A2 /* Controller */,
+				594A616520DB875B0094D3A2 /* Utils */,
+				594A615F20DB80130094D3A2 /* Extensions */,
+				597639C120DA77030085763A /* Model */,
+				597639BE20DA2FEE0085763A /* PageViewController */,
 				5976398C20D9F2430085763A /* AppDelegate.swift */,
 				5976398E20D9F2430085763A /* ViewController.swift */,
 				5976399020D9F2430085763A /* Main.storyboard */,
 				5976399320D9F2440085763A /* Assets.xcassets */,
 				5976399520D9F2440085763A /* LaunchScreen.storyboard */,
 				5976399820D9F2440085763A /* Info.plist */,
+				597639BC20DA2F680085763A /* RDViewController.swift */,
 			);
 			path = BookReader;
 			sourceTree = "<group>";
@@ -125,6 +221,41 @@
 			path = BookReaderUITests;
 			sourceTree = "<group>";
 		};
+		597639BE20DA2FEE0085763A /* PageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				597639BF20DA30290085763A /* RDPageViewController.swift */,
+			);
+			path = PageViewController;
+			sourceTree = "<group>";
+		};
+		597639C120DA77030085763A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				597639C220DA77170085763A /* RDReadModel.swift */,
+				597639C420DA78750085763A /* RDChapterModel.swift */,
+				597392D620E7457E00EE6C81 /* RDRecordModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8279A3C52F4F7A61C436E337 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BC314F97DE227B7CC913817 /* Pods_BookReader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E1BF777D830729A36B51EF4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				619648312EA2E928A41EC2FD /* Pods-BookReader.debug.xcconfig */,
+				0D5CF16E7BBD3C95FC1EB75B /* Pods-BookReader.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +263,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 597639B120D9F2440085763A /* Build configuration list for PBXNativeTarget "BookReader" */;
 			buildPhases = (
+				ABA78D1B2B8AD945E8BE2895 /* [CP] Check Pods Manifest.lock */,
 				5976398520D9F2430085763A /* Sources */,
 				5976398620D9F2430085763A /* Frameworks */,
 				5976398720D9F2430085763A /* Resources */,
+				E73CAF42FBBB94088F8D21E0 /* [CP] Embed Pods Frameworks */,
+				FB4F4DBC811094FD2AA7ADD2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,6 +365,9 @@
 			files = (
 				5976399720D9F2440085763A /* LaunchScreen.storyboard in Resources */,
 				5976399420D9F2440085763A /* Assets.xcassets in Resources */,
+				594A616920DB97EC0094D3A2 /* 执宰大明.txt in Resources */,
+				594A616420DB82490094D3A2 /* mdjyml.txt in Resources */,
+				597639BB20D9FE1D0085763A /* Podfile in Resources */,
 				5976399220D9F2430085763A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,13 +388,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		ABA78D1B2B8AD945E8BE2895 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BookReader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E73CAF42FBBB94088F8D21E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BookReader/Pods-BookReader-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookReader/Pods-BookReader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB4F4DBC811094FD2AA7ADD2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookReader/Pods-BookReader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5976398520D9F2430085763A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				597B173920EFA46100166BAB /* RDBackgroundViewController.swift in Sources */,
+				597639BD20DA2F680085763A /* RDViewController.swift in Sources */,
 				5976398F20D9F2430085763A /* ViewController.swift in Sources */,
+				590A246820DD25BC00968414 /* RDReadConfigure.swift in Sources */,
+				590A246220DD136200968414 /* RDReadView.swift in Sources */,
 				5976398D20D9F2430085763A /* AppDelegate.swift in Sources */,
+				597639C020DA30290085763A /* RDPageViewController.swift in Sources */,
+				597392D720E7457E00EE6C81 /* RDRecordModel.swift in Sources */,
+				590A246620DD1FDF00968414 /* RDGlobalProperty.swift in Sources */,
+				59F7BAA620E64D6B0004E254 /* HexColor.swift in Sources */,
+				597639C320DA77170085763A /* RDReadModel.swift in Sources */,
+				594A616120DB80290094D3A2 /* String+.swift in Sources */,
+				597639C520DA78750085763A /* RDChapterModel.swift in Sources */,
+				594A616720DB876B0094D3A2 /* RDUtils.swift in Sources */,
+				594A616C20DBB0780094D3A2 /* RDReadViewController.swift in Sources */,
+				590A246420DD14B500968414 /* RDReadParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +633,7 @@
 		};
 		597639B220D9F2440085763A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 619648312EA2E928A41EC2FD /* Pods-BookReader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +652,7 @@
 		};
 		597639B320D9F2440085763A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D5CF16E7BBD3C95FC1EB75B /* Pods-BookReader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
