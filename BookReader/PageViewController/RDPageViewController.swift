@@ -112,6 +112,11 @@ extension RDPageViewController: UIPageViewControllerDelegate, UIPageViewControll
             return nil
         }
         tempNumber -= 1
+        if abs(tempNumber) % 2 == 0 {
+            let backgroundViewController = RDBackgroundViewController()
+            backgroundViewController.targetView = getPreviewReadController()?.view
+            return backgroundViewController
+        }
         return getPreviewReadController()
     }
     
@@ -123,10 +128,12 @@ extension RDPageViewController: UIPageViewControllerDelegate, UIPageViewControll
             return nil
         }
         tempNumber += 1
-        if abs(tempNumber) % 2 == 1 {
-            return getNextReadController()
+        if abs(tempNumber) % 2 == 0 {
+            let backgroundViewController = RDBackgroundViewController()
+            backgroundViewController.targetView = getReadViewController(record)?.view
+            return backgroundViewController
         }
-        return getReadViewController(record)
+        return getNextReadController()
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {

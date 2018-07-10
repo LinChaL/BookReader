@@ -17,11 +17,12 @@ class RDBackgroundViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.addSubview(imageView)
         imageView.backgroundColor = RDReadConfigure.readInfo().readColor()
         imageView.frame = view.bounds
         imageView.layer.transform = CATransform3DMakeRotation(CGFloat.pi, 0, 1, 0)
         
         guard let targetView = targetView else { return }
-        
+        imageView.image = RDReadParser.screenShot(targetView)
     }
 }
