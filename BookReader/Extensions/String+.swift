@@ -25,14 +25,15 @@ extension String {
     
     // [from, to]
     func captureSubString(from: Int, to: Int) -> String {
-        guard from >= 0, to >= from, to < self.length else {
+        guard from >= 0, to >= from else {
             return self
         }
-        
+        let last = to > self.length - 1 ? self.length - 1 : to
 //        let start = self.index(self.startIndex, offsetBy: from)
 //        let end = self.index(self.startIndex, offsetBy: to)
 //        return String(self[start...end])
         let str = self as NSString
-        return str.substring(with: NSRange(location: from, length: to - from + 1))
+        let result = str.substring(with: NSRange(location: from, length: last - from + 1))
+        return result
     }
 }

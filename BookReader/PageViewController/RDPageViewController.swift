@@ -84,7 +84,7 @@ class RDPageViewController: RDViewController {
         return getReadViewController(record)
     }
     
-    private func getNextReadController(_ isUpdateRecord: Bool = false) -> RDReadViewController? {
+    private func getNextReadController() -> RDReadViewController? {
         guard let readModel = readModel, let currentRecord = readModel.record else {
             return nil
         }
