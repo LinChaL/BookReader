@@ -16,6 +16,13 @@ enum RDFontType: Int {
     case song       //宋体
 }
 
+enum RDEffectType {
+    case none           // 无效果
+    case translation    // 平移
+    case simulation     // 仿真
+    case upAndDown      // 上下
+}
+
 let RDReadConfigureKey: String = "RDReadConfigureKey"
 
 
@@ -31,6 +38,9 @@ class RDReadConfigure: NSObject {
     
     /// 字体大小
     var fontSize: CGFloat = 14
+    
+    /// 翻页效果
+    var effectType: RDEffectType = .translation
     
     
     // MARK: -- 构造初始化
@@ -63,7 +73,8 @@ class RDReadConfigure: NSObject {
     /// 获得颜色
     func readColor() ->UIColor {
         
-        return UIColor(patternImage:UIImage(named: "read_bg_0")!)
+//        return UIColor(patternImage:UIImage(named: "read_bg_0")!)
+        return UIColor.rdBlack()
     }
     
     /// 获得文字Font

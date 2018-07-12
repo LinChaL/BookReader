@@ -12,11 +12,13 @@
 		590A246420DD14B500968414 /* RDReadParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590A246320DD14B500968414 /* RDReadParser.swift */; };
 		590A246620DD1FDF00968414 /* RDGlobalProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590A246520DD1FDF00968414 /* RDGlobalProperty.swift */; };
 		590A246820DD25BC00968414 /* RDReadConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590A246720DD25BC00968414 /* RDReadConfigure.swift */; };
+		5915F72420F4E6E400F98B40 /* RDCoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5915F72320F4E6E400F98B40 /* RDCoverController.swift */; };
 		594A616120DB80290094D3A2 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594A616020DB80290094D3A2 /* String+.swift */; };
 		594A616420DB82490094D3A2 /* mdjyml.txt in Resources */ = {isa = PBXBuildFile; fileRef = 594A616320DB82490094D3A2 /* mdjyml.txt */; };
 		594A616720DB876B0094D3A2 /* RDUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594A616620DB876B0094D3A2 /* RDUtils.swift */; };
 		594A616920DB97EC0094D3A2 /* 执宰大明.txt in Resources */ = {isa = PBXBuildFile; fileRef = 594A616820DB97EC0094D3A2 /* 执宰大明.txt */; };
 		594A616C20DBB0780094D3A2 /* RDReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594A616B20DBB0780094D3A2 /* RDReadViewController.swift */; };
+		597096EA20F5D92A00FD0D61 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597096E920F5D92A00FD0D61 /* UIColor+.swift */; };
 		597392D720E7457E00EE6C81 /* RDRecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597392D620E7457E00EE6C81 /* RDRecordModel.swift */; };
 		5976398D20D9F2430085763A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5976398C20D9F2430085763A /* AppDelegate.swift */; };
 		5976398F20D9F2430085763A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5976398E20D9F2430085763A /* ViewController.swift */; };
@@ -57,11 +59,13 @@
 		590A246320DD14B500968414 /* RDReadParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDReadParser.swift; sourceTree = "<group>"; };
 		590A246520DD1FDF00968414 /* RDGlobalProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDGlobalProperty.swift; sourceTree = "<group>"; };
 		590A246720DD25BC00968414 /* RDReadConfigure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDReadConfigure.swift; sourceTree = "<group>"; };
+		5915F72320F4E6E400F98B40 /* RDCoverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDCoverController.swift; sourceTree = "<group>"; };
 		594A616020DB80290094D3A2 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		594A616320DB82490094D3A2 /* mdjyml.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mdjyml.txt; sourceTree = "<group>"; };
 		594A616620DB876B0094D3A2 /* RDUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDUtils.swift; sourceTree = "<group>"; };
 		594A616820DB97EC0094D3A2 /* 执宰大明.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "执宰大明.txt"; sourceTree = "<group>"; };
 		594A616B20DBB0780094D3A2 /* RDReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDReadViewController.swift; sourceTree = "<group>"; };
+		597096E920F5D92A00FD0D61 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		597392D620E7457E00EE6C81 /* RDRecordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDRecordModel.swift; sourceTree = "<group>"; };
 		5976398920D9F2430085763A /* BookReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5976398C20D9F2430085763A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +130,7 @@
 			children = (
 				59F7BAA520E64D6B0004E254 /* HexColor.swift */,
 				594A616020DB80290094D3A2 /* String+.swift */,
+				597096E920F5D92A00FD0D61 /* UIColor+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 			children = (
 				594A616B20DBB0780094D3A2 /* RDReadViewController.swift */,
 				597B173820EFA46100166BAB /* RDBackgroundViewController.swift */,
+				5915F72320F4E6E400F98B40 /* RDCoverController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -455,6 +461,7 @@
 				5976398D20D9F2430085763A /* AppDelegate.swift in Sources */,
 				597639C020DA30290085763A /* RDPageViewController.swift in Sources */,
 				597392D720E7457E00EE6C81 /* RDRecordModel.swift in Sources */,
+				5915F72420F4E6E400F98B40 /* RDCoverController.swift in Sources */,
 				590A246620DD1FDF00968414 /* RDGlobalProperty.swift in Sources */,
 				59F7BAA620E64D6B0004E254 /* HexColor.swift in Sources */,
 				597639C320DA77170085763A /* RDReadModel.swift in Sources */,
@@ -463,6 +470,7 @@
 				594A616720DB876B0094D3A2 /* RDUtils.swift in Sources */,
 				594A616C20DBB0780094D3A2 /* RDReadViewController.swift in Sources */,
 				590A246420DD14B500968414 /* RDReadParser.swift in Sources */,
+				597096EA20F5D92A00FD0D61 /* UIColor+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

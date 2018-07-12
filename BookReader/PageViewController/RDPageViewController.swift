@@ -23,8 +23,27 @@ class RDPageViewController: RDViewController {
     
     private(set) var pageViewController: UIPageViewController? {
         willSet {
-            pageViewController?.view.removeFromSuperview()
-            pageViewController?.removeFromParentViewController()
+            if pageViewController != nil {
+                pageViewController?.view.removeFromSuperview()
+                pageViewController?.removeFromParentViewController()
+            }
+            if coverController != nil {
+                coverController?.view.removeFromSuperview()
+                coverController?.removeFromParentViewController()
+            }
+        }
+    }
+    
+    private(set) var coverController: RDCoverController? {
+        willSet {
+            if pageViewController != nil {
+                pageViewController?.view.removeFromSuperview()
+                pageViewController?.removeFromParentViewController()
+            }
+            if coverController != nil {
+                coverController?.view.removeFromSuperview()
+                coverController?.removeFromParentViewController()
+            }
         }
     }
     override func viewDidLoad() {
@@ -36,22 +55,34 @@ class RDPageViewController: RDViewController {
     }
     
     private func createPageController(_ displayController: UIViewController?) {
-        let options = [UIPageViewControllerOptionSpineLocationKey:NSNumber(value: UIPageViewControllerSpineLocation.min.rawValue as Int)]
-        
-        pageViewController = UIPageViewController(transitionStyle:UIPageViewControllerTransitionStyle.pageCurl,navigationOrientation:UIPageViewControllerNavigationOrientation.horizontal,options: options)
-        
-        pageViewController!.delegate = self
-        
-        pageViewController!.dataSource = self
-        
-        // 为了翻页背面的颜色使用
-        pageViewController!.isDoubleSided = true
-        
-        view.insertSubview(pageViewController!.view, at: 0)
-        
-        addChildViewController(pageViewController!)
-        
-        pageViewController!.setViewControllers((displayController != nil ? [displayController!] : nil), direction: UIPageViewControllerNavigationDirection.forward, animated: false, completion: nil)
+        if RDReadConfigure.readInfo().effectType == .simulation {
+            let options = [UIPageViewControllerOptionSpineLocationKey:NSNumber(value: UIPageViewControllerSpineLocation.min.rawValue as Int)]
+            
+            pageViewController = UIPageViewController(transitionStyle:UIPageViewControllerTransitionStyle.pageCurl,navigationOrientation:UIPageViewControllerNavigationOrientation.horizontal,options: options)
+            
+            pageViewController!.delegate = self
+            
+            pageViewController!.dataSource = self
+            
+            // 为了翻页背面的颜色使用
+            pageViewController!.isDoubleSided = true
+            
+            view.insertSubview(pageViewController!.view, at: 0)
+            addChildViewController(pageViewController!)
+            
+            pageViewController!.setViewControllers((displayController != nil ? [displayController!] : nil), direction: UIPageViewControllerNavigationDirection.forward, animated: false, completion: nil)
+        } else {
+            let coverViewController = RDCoverController()
+            coverViewController.setController(displayController)
+            coverViewController.delegate = self
+            
+            view.insertSubview(coverViewController.view, at: 0)
+            addChildViewController(coverViewController)
+            
+            coverViewController.view.snp.makeConstraints { (make) in
+                make.edges.equalToSuperview()
+            }
+        }
     }
     
     private func getReadViewController(_ record: RDRecordModel) -> RDReadViewController? {
@@ -144,4 +175,25 @@ extension RDPageViewController: UIPageViewControllerDelegate, UIPageViewControll
             readModel.record = record
         }
     }
+}
+
+extension RDPageViewController: RDCoverControllerDelegate {
+    func coverController(_ coverController: RDCoverController, currentController: UIViewController?, isFinish: Bool) {
+        guard let readModel = readModel, let record = tempRecord else {
+            return
+        }
+        if isFinish {
+            readModel.record = record
+        }
+    }
+    
+    func coverController(_ coverController: RDCoverController, getPreControllerWithCurrentController: UIViewController) -> UIViewController? {
+        return getPreviewReadController()
+    }
+    
+    func coverController(_ coverController: RDCoverController, getNextControllerWithCurrentController: UIViewController) -> UIViewController? {
+        return getNextReadController()
+    }
+    
+    
 }
